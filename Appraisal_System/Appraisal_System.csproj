@@ -63,11 +63,29 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNone.Designer.cs">
+      <DependentUpon>FrmNone.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSetUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmSetUser.Designer.cs">
       <DependentUpon>FrmSetUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserAppraisal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserAppraisal.Designer.cs">
+      <DependentUpon>FrmUserAppraisal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserAppraisalEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserAppraisalEdit.Designer.cs">
+      <DependentUpon>FrmUserAppraisalEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUserManager.cs">
       <SubType>Form</SubType>
@@ -83,8 +101,17 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmNone.resx">
+      <DependentUpon>FrmNone.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSetUser.resx">
       <DependentUpon>FrmSetUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserAppraisal.resx">
+      <DependentUpon>FrmUserAppraisal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserAppraisalEdit.resx">
+      <DependentUpon>FrmUserAppraisalEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUserManager.resx">
       <DependentUpon>FrmUserManager.cs</DependentUpon>

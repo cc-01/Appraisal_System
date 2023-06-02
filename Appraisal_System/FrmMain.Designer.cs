@@ -61,12 +61,15 @@
             this.trvMenu.Location = new System.Drawing.Point(0, 0);
             this.trvMenu.Name = "trvMenu";
             treeNode1.Name = "tnUsermanager";
+            treeNode1.Tag = "FrmUserManager";
             treeNode1.Text = "用户管理";
             treeNode2.Name = "tnBaseManager";
+            treeNode2.Tag = "FrmBaseManager";
             treeNode2.Text = "基数管理";
             treeNode3.Name = "tnCoefficientManager";
             treeNode3.Text = "系数管理";
             treeNode4.Name = "tnUserAppraisal";
+            treeNode4.Tag = "FrmUserAppraisal";
             treeNode4.Text = "人员绩效";
             this.trvMenu.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode1,

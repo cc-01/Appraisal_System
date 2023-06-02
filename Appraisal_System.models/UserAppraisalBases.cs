@@ -18,10 +18,16 @@ namespace Appraisal_System.Models
         public int AppraisalBase { get; set; }
         public bool IsDel { get; set; }
 
+        public static DataTable GetDtJoinAppraisal()
+        {
+          
+            DataTable dt = SqlHelper.ExecuteTable("SELECT u.Id,u.UserName,u.Sex,u.BaseTypeId,u.IsDel,a.AppraisalBase,a.BaseType  FROM Users u LEFT JOIN AppraisalBases a ON u.BaseTypeId=a.Id");
+            return dt;
+        }
         public static List<UserAppraisalBases> GetListJoinAppraisal()
         {
             List<UserAppraisalBases> userAppraisalBases= new List<UserAppraisalBases>();
-            DataTable dt = SqlHelper.ExecuteTable("SELECT u.Id,u.UserName,u.Sex,u.BaseTypeId,u.IsDel,a.AppraisalBase,a.BaseType  FROM Users u LEFT JOIN AppraisalBases a ON u.BaseTypeId=a.Id");
+            DataTable dt = GetDtJoinAppraisal();
             foreach (DataRow dr in dt.Rows)
             { 
                 userAppraisalBases.Add(ToModel(dr));

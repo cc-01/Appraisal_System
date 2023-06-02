@@ -41,7 +41,7 @@ namespace Appraisal_System
             e.Node.BackColor = SystemColors.Highlight;
             e.Node.ForeColor = Color.White;
 
-            Form form = FormFactory.CreateForm(e.Node.Index);
+            Form form = FormFactory.CreateForm(e.Node.Tag?.ToString());
             form.MdiParent= this;
             form.Parent = splitContainer1.Panel2;
             form.Show();

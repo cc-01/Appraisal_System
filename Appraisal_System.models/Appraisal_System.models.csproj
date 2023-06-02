@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppraisalBases.cs" />
+    <Compile Include="AppraisalCoefficients.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserAppraisalCoefficients.cs" />
     <Compile Include="UserAppraisalBases.cs" />
     <Compile Include="Users.cs" />
   </ItemGroup>

@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkIsStop = new System.Windows.Forms.CheckBox();
+            this.cbxSex = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbxBase = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbxBase = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbxSex = new System.Windows.Forms.ComboBox();
-            this.chkIsStop = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +57,54 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "填写信息";
+            // 
+            // chkIsStop
+            // 
+            this.chkIsStop.AutoSize = true;
+            this.chkIsStop.Location = new System.Drawing.Point(320, 111);
+            this.chkIsStop.Name = "chkIsStop";
+            this.chkIsStop.Size = new System.Drawing.Size(89, 19);
+            this.chkIsStop.TabIndex = 6;
+            this.chkIsStop.Text = "是否停用";
+            this.chkIsStop.UseVisualStyleBackColor = true;
+            // 
+            // cbxSex
+            // 
+            this.cbxSex.FormattingEnabled = true;
+            this.cbxSex.Items.AddRange(new object[] {
+            "男",
+            "女"});
+            this.cbxSex.Location = new System.Drawing.Point(145, 107);
+            this.cbxSex.Name = "cbxSex";
+            this.cbxSex.Size = new System.Drawing.Size(100, 23);
+            this.cbxSex.TabIndex = 5;
+            this.cbxSex.Text = "男";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(87, 110);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "性别";
+            // 
+            // cbxBase
+            // 
+            this.cbxBase.FormattingEnabled = true;
+            this.cbxBase.Location = new System.Drawing.Point(360, 49);
+            this.cbxBase.Name = "cbxBase";
+            this.cbxBase.Size = new System.Drawing.Size(118, 23);
+            this.cbxBase.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(317, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "身份";
             // 
             // txtUserName
             // 
@@ -93,54 +141,6 @@
             this.btnSave.Text = "保存";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(317, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "身份";
-            // 
-            // cbxBase
-            // 
-            this.cbxBase.FormattingEnabled = true;
-            this.cbxBase.Location = new System.Drawing.Point(360, 49);
-            this.cbxBase.Name = "cbxBase";
-            this.cbxBase.Size = new System.Drawing.Size(118, 23);
-            this.cbxBase.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(87, 110);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "性别";
-            // 
-            // cbxSex
-            // 
-            this.cbxSex.FormattingEnabled = true;
-            this.cbxSex.Items.AddRange(new object[] {
-            "男",
-            "女"});
-            this.cbxSex.Location = new System.Drawing.Point(145, 107);
-            this.cbxSex.Name = "cbxSex";
-            this.cbxSex.Size = new System.Drawing.Size(100, 23);
-            this.cbxSex.TabIndex = 5;
-            this.cbxSex.Text = "男";
-            // 
-            // chkIsStop
-            // 
-            this.chkIsStop.AutoSize = true;
-            this.chkIsStop.Location = new System.Drawing.Point(320, 111);
-            this.chkIsStop.Name = "chkIsStop";
-            this.chkIsStop.Size = new System.Drawing.Size(89, 19);
-            this.chkIsStop.TabIndex = 6;
-            this.chkIsStop.Text = "是否停用";
-            this.chkIsStop.UseVisualStyleBackColor = true;
             // 
             // FrmSetUser
             // 
