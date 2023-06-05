@@ -12,12 +12,13 @@ namespace Appraisal_System.Utility
     {
         public static string ConStr { get; set; }
 
-        public static DataTable ExecuteTable(string cmdText)
+        public static DataTable ExecuteTable(string cmdText, params SqlParameter[] sqlParameters)
         {
             using(SqlConnection conn=new SqlConnection(ConStr))
             {
                 conn.Open();
                 SqlCommand cmd=new SqlCommand(cmdText,conn);
+                cmd.Parameters.AddRange(sqlParameters);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataSet ds= new DataSet();
                 sda.Fill(ds);
@@ -34,7 +35,7 @@ namespace Appraisal_System.Utility
                 int rows = cmd.ExecuteNonQuery();
                 if (rows <= 0)
                 {
-                    throw new Exception("数据库操作失败");
+                    //throw new Exception("数据库操作失败");
                 }
                 return rows;
             }
